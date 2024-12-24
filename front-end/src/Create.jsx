@@ -7,7 +7,7 @@ const Create = () => {
   const handleChange = () => {
     axios
       .post("http://localhost:3001/add", { taskList: task })
-      .then((result) => console.log(result))
+      .then((result) => location.reload())
       .catch((error) => console.log(error));
   };
   return (
